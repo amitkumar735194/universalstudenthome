@@ -4,7 +4,7 @@
   "private": true,
   "scripts": { 
     "dev": "next dev",
-     "build": "esbuild api/admin/auth/upload-room-image.js --bundle --minify --platform=node --outfile=dist/upload-room-image.bundle.js",
+    "build": "next build",
    "start": "next start", 
     "export": "next export",
     "lint": "next lint"
