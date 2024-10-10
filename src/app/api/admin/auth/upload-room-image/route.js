@@ -5,6 +5,13 @@ import sharp from "sharp";
 import mongoose from "mongoose";
 import { roomImage } from "@/Http/Models/rooms";
 
+
+export const config = {
+    api: {
+      bodyParser: false,  // Disable the default body parsing
+    },
+  };
+  
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 
