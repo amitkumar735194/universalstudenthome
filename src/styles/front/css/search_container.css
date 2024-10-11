@@ -1,0 +1,41 @@
+.homepage-9.hp-6 .explore__form-checkbox-list-header.full-filter-header.filter-block {
+    margin-top: 20px;
+    border-radius: 6px;
+    margin-left: -5px;
+    width: 100%;
+}
+
+.hp-6 .explore__form-checkbox-list-header.full-filter-header.filter-block {
+    opacity: 1;
+    z-index: 999;
+    visibility: visible;
+    position: relative;
+}
+
+.hp-6 .explore__form-checkbox-list-header.full-filter-header.filter-block {
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.hp-6 .explore__form-checkbox-list-header.full-filter-header {
+    opacity: 0;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    /* z-index: -1; */
+    visibility: hidden;
+}
+
+.hp-6 .explore__form-checkbox-list-header.full-filter-header {
+    top: -139px;
+}
+
+.hp-6 .explore__form-checkbox-list-header.full-filter-header {
+    opacity: 0;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    /* z-index: -1; */
+    /* visibility: hidden; */
+}

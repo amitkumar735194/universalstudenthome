@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans",Arial,sans-serif;
+}
+.outer-container{
+  width: 100vw;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+#change-button {
+  background: #a4cb61;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#change-button:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.outer-container.active {
+  width: 500px !important;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+.tour-details-section {
+  height: 100vh;
+}
+.center {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.center p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#itinerary,
+#dates,
+#map,
+#book {
+  background: #c4da9e;
+}
+#accommodation,
+#includes-excludes,
+#gallery {
+  background: #e4e4e4;
+}
+
+
+/* Sticky nav */ 
+#eight-day-sticky-section .tour-details-section-active {
+  color: #a4cb61 !important;
+	background: transparent !important;
+}
+
+
+.sticky-section {
+	z-index: 19 !important;
+}
+
+.scrollmenu-fade {
+  position: relative;
+}
+.scrollmenu-fade:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 15px;
+  pointer-events: none;
+  background-image: linear-gradient(to right,rgba(255,255,255,0),#333333 85%);
+	width: 15%;
+	height: 46px;
+    }
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu p {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* Media queries */
+
+@media only screen and (min-width : 650px) {
+	div.scrollmenu p.scroll-display-arrow {
+		display: none;
+}
+}
+
+@media only screen and (max-width : 650px) {
+  .scrollmenu-fade:after {
+    height: 82px !important;
+}
+  #change-button {
+    display: none;
+}
+  .hide-mobile {
+    display: none;
+}
+}
